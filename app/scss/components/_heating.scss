@@ -1,0 +1,45 @@
+.heating {
+  &-items {
+    counter-reset: item;
+  }
+}
+
+.heating-item {
+  &__box {
+    flex-shrink: 0;
+  }
+
+  &__info {
+    padding: 0 35px 0 20px;
+
+    &::before {
+      counter-increment: item;
+      content: counter(item);
+      font: 900 30px / 35px var(--font);
+      color: #FF7E07;
+      margin-bottom: 5px;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    .heating-item__info {
+      padding: 0 20px 0 35px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .heating-item__info {
+    padding: 0 20px 0 5px;
+  }
+
+  .heating-item:nth-child(even) .heating-item__info {
+    padding: 0 5px 0 20px;
+  }
+}

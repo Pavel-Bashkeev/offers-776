@@ -1,0 +1,12 @@
+.tech{
+  &__img{
+    margin-bottom: 40px;
+  }
+  &-info{
+    padding: 0 20px;
+    &__text{
+      color: $white;
+      font:400 20px/24px  var(--font);
+    }
+  }
+}

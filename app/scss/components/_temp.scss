@@ -1,0 +1,32 @@
+.temp{
+  &__text{
+    background: rgba(20, 85, 135, 0.8);
+    padding: 14px 5px 14px 20px;
+    max-width: 400px;
+    margin-top: 30px;
+    color: $white;
+    height: fit-content;
+  }
+  &-info{
+    padding: 34px 20px 35px;
+
+    &__text{
+      font: 400 20px 24px  var(--font);
+      &:not(:last-child){
+        margin-bottom: 15px;
+      }
+      &--accent{
+        font: 800 20px/24px  var(--font);
+        &-yeloow{
+          color:#E9B500;
+        }
+        &-orang{
+          color:#E97000;
+        }
+        &-red{
+          color:#E90000;
+        }
+      }
+    }
+  }
+}

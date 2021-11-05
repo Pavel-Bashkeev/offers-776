@@ -22,7 +22,7 @@ img {
 body {
 	letter-spacing: 0.43px;
 	background-color: #B6B6B6;
-	font: 400 20px / 24px $font;
+	font: 400 20px / 24px var(--font);
 }
 
 .btn-reset {
@@ -39,6 +39,7 @@ body {
 	max-width: 480px;
 	margin: 0 auto;
 	background-color: #fff;
+	overflow: hidden;
 }
 
 .container {
@@ -65,11 +66,11 @@ body {
 }
 
 .link-to-form {
-	max-width: 410px;
+	max-width: 90%;
 	color: $white;
 	padding: 25px 0;
 	text-align: center;
-	font: 700 25px/30px $font;
+	font: 700 25px/30px var(--font);
 	background: #F42E03;
 	border-radius: 50px;
 	margin: 0 auto;
@@ -78,7 +79,7 @@ body {
 	z-index: 1;
 	transition: all .3s ease-in-out;
 	animation: linkAnim 1.7s infinite ease-in-out;
-	margin-bottom: 40px;
+
 
 	&:hover {
 		transform: scale(1.02);
@@ -90,14 +91,16 @@ body {
 	padding: 65px 0;
 
 	&--dark {
+		background-color: $dark-bg;
 		.title {
-			font: 900 30px/36px $font;
+			font: 900 30px/36px var(--font);
 			color: $white;
 		}
 	}
 	&--white{
+		background-color: #fff;
 		.title{
-			font: 900 30px/36px $font;
+			font: 900 30px/36px var(--font);
 			color: #282828;
 		}
 	}

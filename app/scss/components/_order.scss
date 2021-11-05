@@ -1,0 +1,41 @@
+.order {
+  &-list {
+    counter-reset: item;
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        counter-increment: item;
+        content: counter(item);
+        width: 66px;
+        height: 66px;
+        background-image: url('../images/dest/icons/circle.svg');
+        @extend %bg-cover;
+        font: 900 28px/34px var(--font);
+        color: $white;
+        flex-shrink: 0;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+
+        &::before {
+          background-image: url('../images/dest/icons/drop.svg');
+          @extend %bg-cover;
+          height: 74px;
+        }
+      }
+
+      &-text {
+        font: 400 18px/22px var(--font);
+        color: $white;
+      }
+    }
+  }
+}

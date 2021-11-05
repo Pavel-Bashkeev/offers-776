@@ -1,0 +1,17 @@
+.specif{
+  &-list{
+    &__item{
+      &-icon{
+        width: 54px;
+        margin-right: 20px;
+      }
+      &:not(:last-child){
+        margin-bottom: 20px;
+      }
+      &-text{
+        font: 400 20px/24px var(--font);
+        color: $white;
+      }
+    }
+  }
+}

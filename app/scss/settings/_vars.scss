@@ -5,11 +5,6 @@ $accent:#FF3407;
 $default: #2C2929;
 $dark-bg:#282828;
 // Colors
-// Font
-$font: 'Montserrat',sans-serif;
-$font-form: 'Rubik';
-$font-comment: 'Segoe UI',sans-serif;
-// Font
 
 %bg-cover{
   background-repeat: no-repeat;
@@ -20,4 +15,10 @@ $font-comment: 'Segoe UI',sans-serif;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+:root{
+	--font: 'Montserrat',sans-serif;
+  --font-form: 'Rubik';
+  --font-comment: 'Segoe UI',sans-serif;
 }

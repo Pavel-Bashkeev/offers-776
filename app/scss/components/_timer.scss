@@ -1,14 +1,15 @@
-.timer{
-  &__text{
+.timer {
+  &__text {
     background-color: #221984;
     border-radius: 20px;
     padding: 9px 5px;
     max-width: 340px;
     margin: 0 auto 20px;
     color: $white;
-    font: 700 18px/22px $font;
+    font: 700 18px/22px var(--font);
     position: relative;
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       left: 50%;
@@ -20,15 +21,29 @@
       clip-path: polygon(50% 100%, 0 0, 100% 0);
     }
   }
-  &-count{
-    font: 700 60px/73px $font;
+
+  &-count {
+    font: 700 60px/73px var(--font);
     color: #1E1E1E;
     width: 85px;
     text-align: center;
   }
-  &-delimeter{
-    font: 700 60px/73px $font;
+
+  &-delimeter {
+    font: 700 60px/73px var(--font);
     color: #1E1E1E;
     margin: 0 5px;
+  }
+}
+
+@media (max-width: 390px) {
+
+  .timer-count,
+  .timer-delimeter {
+    font: 700 50px/60px var(--font);
+  }
+
+  .timer-count {
+    width: 75px;
   }
 }
