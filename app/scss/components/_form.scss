@@ -16,7 +16,7 @@
     font: 400 21px / 24px var(--font);
     height: 75px;
     border: 1px solid #9C9C9C;
-    outline: 1px solid #9C9C9C;
+    outline: 1px solid transparent;
     border-radius: 40px;
     padding: 0 25px;
     &::placeholder {
